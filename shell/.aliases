@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# General
+alias copy="xclip -selection clipboard"
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+alias sl="ls"
+alias tl="tmux ls"
+
+# Vim
+alias vi="vim"
+alias v="vim"
+
+# Python
+alias ipy="ipython3"
+alias py="python3"
+
+# Git
+alias gs="git status"
+alias gb="git branch"
+alias gp="git pull"
+alias gl="git log --all --graph --decorate"
+alias ga="git add -A"
+
+# Docker
+alias dps="docker ps -a"
