@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -euo pipefail
 
 if ! command -v stow &> /dev/null; then
   echo "Error: GNU Stow is not installed." >&2
@@ -7,11 +6,13 @@ if ! command -v stow &> /dev/null; then
 fi
 
 PROGRAMS=(
-  # bash
+  bash
   tmux
   shell
 )
 
 for program in "${PROGRAMS[@]}"; do
-  stow --verbose 2 --target "$HOME" "${program}"
+  echo "running: ${program}"
+  stow --target "$HOME" "${program}"
+  echo "---"
 done

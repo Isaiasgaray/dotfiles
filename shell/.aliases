@@ -2,6 +2,8 @@
 
 # General
 alias copy="xclip -selection clipboard"
+alias mkdir="mkdir -p"
+alias mkd="mkdir"
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias sl="ls"
@@ -16,6 +18,7 @@ alias ipy="ipython3"
 alias py="python3"
 
 # Git
+alias g="git"
 alias gs="git status"
 alias gb="git branch"
 alias gp="git pull"
