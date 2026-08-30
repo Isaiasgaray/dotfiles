@@ -10,6 +10,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" || exit
 
 PROGRAMS=(
   bash
+  git
   tmux
   shell
 )

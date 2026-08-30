@@ -18,8 +18,7 @@ alias ipy="ipython3"
 alias py="python3"
 
 # Git
-alias g="git"
-alias gs="git status"
+alias gs="git status --short"
 alias gb="git branch"
 alias gp="git pull"
 alias gl="git log --all --graph --decorate"
