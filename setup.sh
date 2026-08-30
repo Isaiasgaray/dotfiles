@@ -5,6 +5,9 @@ if ! command -v stow &> /dev/null; then
   exit 1
 fi
 
+# Change to the directory where this script is located.
+cd "$(dirname "${BASH_SOURCE[0]}")" || exit
+
 PROGRAMS=(
   bash
   tmux
@@ -12,7 +15,7 @@ PROGRAMS=(
 )
 
 for program in "${PROGRAMS[@]}"; do
-  echo "running: ${program}"
+  echo "Stowing: $program"
   stow --target "$HOME" "${program}"
   echo "---"
 done

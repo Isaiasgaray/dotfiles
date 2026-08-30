@@ -16,20 +16,22 @@ HISTSIZE=5000
 HISTFILESIZE=10000
 shopt -s histappend
 
-# Language
-export LANG=en_US.utf8
-export LANGUAGE=en_US
-
 # General
 shopt -s checkwinsize
 shopt -s globstar
 
-# Aliases
-source_if_exists() {
-  if [ -f "$1" ]; then
-    source "$1"
-  fi
-}
+# Env
+[ -f "$HOME/.env" ] && source "$HOME/.env"
 
-source_if_exists "$HOME/.aliases"
-source_if_exists "$HOME/.bash_aliases"
+# Aliases
+ALIAS_PATH=(
+  "$HOME/.aliases"
+  "$HOME/.bash_aliases"
+)
+
+for path in "${ALIAS_PATH[@]}"; do
+  [ -f "$path" ] && source "$path"
+done
+
+# PS1
+PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
