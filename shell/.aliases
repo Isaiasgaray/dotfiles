@@ -20,7 +20,8 @@ alias py="python3"
 # Git
 alias gs="git status --short"
 alias gb="git branch"
-alias gp="git pull"
+alias gps="git push"
+alias gpl="git pull"
 alias gl="git log --all --graph --decorate"
 alias ga="git add -A"
 
