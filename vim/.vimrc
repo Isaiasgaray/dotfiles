@@ -8,6 +8,9 @@ set listchars=space:*,eol:$
 " Set <Space> as the leader key for custom shortcuts
 let mapleader = " "
 
+" Remap <Esc>
+imap ii <Esc>
+
 set nocompatible
 set background=dark
 set number
