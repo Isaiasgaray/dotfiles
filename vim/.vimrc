@@ -11,6 +11,10 @@ let mapleader = " "
 " Remap <Esc>
 imap ii <Esc>
 
+" Search highlighting
+set hlsearch
+set incsearch
+
 set nocompatible
 set background=dark
 set number
