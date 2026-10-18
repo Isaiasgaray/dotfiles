@@ -24,6 +24,7 @@ alias gps="git push"
 alias gpl="git pull"
 alias gl="git log --all --graph --decorate"
 alias ga="git add -A"
+alias lg="lazygit"
 
 # Docker
 alias dps="docker ps -a"

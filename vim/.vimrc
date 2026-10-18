@@ -47,8 +47,8 @@ autocmd FileType tex nnoremap <leader><CR> :w<CR>:!clear; pdflatex %<CR>
 autocmd FileType tex nnoremap <leader>p :w<CR>:!clear; xdg-open %:r".pdf"<CR>
 
 " C
-autocmd FileType c nnoremap <leader><leader> :w<CR>:!clear ; gcc % -Wall -o %:r<CR>
-autocmd FileType c nnoremap <leader><CR> :!clear ; ./%:r<CR>
+autocmd FileType c nnoremap <leader><leader> :w<CR>:!clear; gcc % -Wall -o %:r<CR>
+autocmd FileType c nnoremap <leader><CR> :!clear; ./%:r<CR>
 
 " Python
 autocmd FileType python nnoremap <leader><CR> :w<CR>:!clear; python3 %<CR>
